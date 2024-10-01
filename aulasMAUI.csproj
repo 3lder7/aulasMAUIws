@@ -66,6 +66,9 @@
 	  <Compile Update="aula1.xaml.cs">
 	    <DependentUpon>aula1.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="TabbedPages\tabbedPage.xaml.cs">
+	    <DependentUpon>tabbedPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -73,6 +76,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="funcoesAssincronas.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="TabbedPages\tabbedPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

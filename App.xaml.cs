@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new funcAssync();
+            MainPage = new addEventoBotoes();
 
         }
     }

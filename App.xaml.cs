@@ -1,4 +1,6 @@
-﻿namespace aulasMAUI
+﻿using aulasMAUI.aulasEstilo;
+
+namespace aulasMAUI
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new tabbedPage();
+            MainPage = new aula1Style();
 
         }
     }

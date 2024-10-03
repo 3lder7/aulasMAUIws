@@ -75,6 +75,9 @@
 	  <MauiXaml Update="addEventoBotoes.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="aulasEstilo\aula1Style.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="funcoesAssincronas.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

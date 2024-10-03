@@ -6,7 +6,7 @@ namespace aulasMAUI
     {
         public App()
         {
-            InitializeComponent();
+            
 
             MainPage = new aula1Style();
 

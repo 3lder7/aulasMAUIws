@@ -3,10 +3,44 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="aulasMAUI.aulasEstilo.aula1Style"
              Title="aulasMaui.aula1Style">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <ContentPage.Resources>
+        <!--cores botões-->
+        <Color x:Key="bgcolor">Red</Color>
+        <Color x:Key="textcolor"> green</Color> <!--x:Key = identificador = id-->
+        
+        <!--estilo a nivel de página-->
+        <!--usada pra declarar recursos especificos da pagina-->
+        <Style TargetType="VerticalStackLayout">
+            <Setter Property="VerticalOptions" Value="Center"></Setter>
+            <Setter Property="Padding" Value="30,0"></Setter>
+            <Setter Property="Spacing" Value="25"></Setter>
+        </Style>
+
+
+        <Style TargetType="Button"><!--mira em qual objeto será modificado-->
+            <Setter Property="BackgroundColor" Value="{StaticResource bgcolor}"></Setter><!--puxa a cor dos x:Key(identificadores)-->
+            <Setter Property="FontAttributes" Value="Bold"></Setter>
+            <Setter Property="FontSize" Value="Large"></Setter>
+            <Setter Property="TextColor" Value="{StaticResource textcolor}"></Setter><!--puxa a cor dos x:Key(identificadores)-->
+        </Style>
+    </ContentPage.Resources>
+
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Button Text="LOGIN">
+                <Button.Resources><!--o mais proximo ao controle, é aplicado-->
+                    <Style TargetType="Button">
+                        <Setter Property="BackgroundColor" Value="DarkBlue"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Text="LOGOUT"></Button>
+            
+        </VerticalStackLayout>
+
+    </ScrollView>
+ 
 </ContentPage>
